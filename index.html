@@ -1,3 +1,30 @@
+<!--     Realizado por :
+                      Agüero, Gerson
+                      Assefh, Emilio Nicolás
+                      Gomez Pacheco, Pamela
+                      Ramallal, Mario
+Consigna:
+            Seguro No Pagamos Cooperativa es una compañía de seguros que lleva 2 años en el mercado.Hasta el momento trabajan con los 
+esquemas tradicionales de venta, es decir contacto telefónico o a través de sus asesores con los potenciales clientes.El directorio de 
+la compañía se reunió con el departamento de sistemas para solicitarle un desarrollo de un sitio web. El objetivo es que los futuros 
+clientes puedan solicitar un contacto a través de la web para que un asesor se contacte con ellos. Vos como parte del equipo de 
+desarrollo debes realizar el maquetado HTML de este sitio web,dándole estilos al mismo con la utilización de CSS
+Los datos que se deben solicitar son los siguientes:
+● Nombre
+● Apellido
+● DNI
+● Email
+● Teléfono
+● Tipo de seguro
+○ Básico
+○ Intermedio
+○ Premium
+Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostrar en pantalla el
+valor de cada uno:
+● Basico: $500
+● Intermedio: $1000
+● Premium: $1500-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +34,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <header>
+        <header>
         <h1>Seguro No Pagamos Cooperativa</h1>
     </header>
 
@@ -19,7 +45,7 @@
                 <label for="nombre"> Nombre: </label>
             </span>
             <span>
-                <input type="text" id ="nombre" name="nombre" >
+                <input type="text" id ="nombre" name="nombre" required>
             </span> 
         </div>  
         <div> 
@@ -43,7 +69,7 @@
                 <label for="email"> Email: </label>
             </span>
             <span>
-                <input type="email" id ="email" name="email" >
+                <input type="email" id ="email" name="email" required >
             </span> 
         </div>  
         <div> 
@@ -66,6 +92,8 @@
                 </select>
             </span>     
         </div>
+       
+
         <div id="botonEnviar"> 
                 <button  class="btn"> Enviar</button>
           </div>  
